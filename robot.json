@@ -1,0 +1,92 @@
+{
+  "name": "singleFollower (Custom)",
+  "shortDescription": "singleFollower (Custom)",
+  "longDescription": "<p>Custom robot created in the configurator.</p>",
+  "longerDescription": "<h3>#robot-dimensions#</h3><ul><li>#robot-wheelDiameter#: 5.6 cm</li><li>#robot-wheelSpacing#: 15.2 cm</li></ul><h3>#robot-actuators#</h3><ul><li>#robot-port# A : #robot-wheel#</li><li>#robot-port# B : #robot-wheel#</li><li>#robot-port# C : #robot-wheel#</li></ul><h3>#robot-sensors#</h3><ul></ul>",
+  "thumbnail": "",
+  "bodyHeight": 4,
+  "bodyWidth": 14,
+  "bodyLength": 16,
+  "wheels": false,
+  "wheelDiameter": 5.6,
+  "wheelWidth": 0.8,
+  "wheelToBodyOffset": 0.2,
+  "bodyEdgeToWheelCenterY": 1,
+  "bodyEdgeToWheelCenterZ": 2,
+  "bodyMass": 1000,
+  "wheelMass": 200,
+  "casterMass": 0,
+  "caster": true,
+  "wheelFriction": 10,
+  "bodyFriction": 0,
+  "casterFriction": 0,
+  "color": "#F09C0D",
+  "imageType": "all",
+  "imageURL": "",
+  "components": [
+    {
+      "type": "WheelActuator",
+      "position": [
+        0.03679953420141224,
+        0.6167128324952849,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.08726646259971647,
+        1.48352986419518
+      ],
+      "components": [],
+      "options": {
+        "diameter": 5.6,
+        "width": 0.8,
+        "mass": 200,
+        "friction": 10,
+        "restitution": 0.8
+      }
+    },
+    {
+      "type": "WheelActuator",
+      "position": [
+        -7,
+        -1,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "components": [],
+      "options": {
+        "diameter": 5.6,
+        "width": 0.8,
+        "mass": 200,
+        "friction": 10,
+        "restitution": 0.8
+      }
+    },
+    {
+      "type": "WheelActuator",
+      "position": [
+        7,
+        -1,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "components": [],
+      "options": {
+        "diameter": 5.6,
+        "width": 0.8,
+        "mass": 200,
+        "friction": 10,
+        "restitution": 0.8
+      }
+    }
+  ],
+  "options": {}
+}
