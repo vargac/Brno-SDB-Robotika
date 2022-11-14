@@ -2,7 +2,7 @@
 
 V tejto časti budeme pracovať s veľmi jednoduchým robotom, bude mať len dva
 motory, aby sa vedel pohybovať. Návod na stavbu robota nájdete [tu](https://education.lego.com/v3/assets/blt293eea581807678a/bltc8481dd2666822ff/5f8801e3f4f4cf0fa39d2fef/ev3-rem-driving-base.pdf).
-V simulátori mu odpovedá toto [prostredie](https://gears.aposteriori.com.sg/index.html?worldJSON=https%3A%2F%2Fraw.githubusercontent.com%2Fvargac%2FBrno-SDB-Robotika%2Fmaster%2FgridMap.json&robotJSON=https%3A%2F%2Fraw.githubusercontent.com%2Fvargac%2FBrno-SDB-Robotika%2Fmaster%2Frobot.json).
+V simulátori mu odpovedá toto [prostredie](https://gears.aposteriori.com.sg/index.html?worldJSON=https%3A%2F%2Fraw.githubusercontent.com%2Fvargac%2FBrno-SDB-Robotika%2Fmaster%2Fassets%2FgridMap.json&robotJSON=https%3A%2F%2Fraw.githubusercontent.com%2Fvargac%2FBrno-SDB-Robotika%2Fmaster%2Fassets%2Frobot_2motors.json).
 
 ![Robot](img/robot.png)
 
