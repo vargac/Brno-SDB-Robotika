@@ -248,10 +248,90 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Úvod
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Úvod
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#program-pre-robota" class="md-nav__link">
+    Program pre robota
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spustenie-programu" class="md-nav__link">
+    Spustenie programu
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simple/" class="md-nav__link">
+        Jednoduché úlohy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bonus/" class="md-nav__link">
+        Bonus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../more/" class="md-nav__link">
+        Ďalšie úlohy
+      </a>
     </li>
   
 
@@ -283,6 +363,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#program-pre-robota" class="md-nav__link">
+    Program pre robota
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spustenie-programu" class="md-nav__link">
+    Spustenie programu
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -299,10 +401,151 @@
 <h1 id="prvy-robot">Prvý robot</h1>
 <p>V tejto časti budeme pracovať s veľmi jednoduchým robotom, bude mať len dva
 motory, aby sa vedel pohybovať. Návod na stavbu robota nájdete <a href="https://education.lego.com/v3/assets/blt293eea581807678a/bltc8481dd2666822ff/5f8801e3f4f4cf0fa39d2fef/ev3-rem-driving-base.pdf">tu</a>.
-V simulátori mu odpovedá toto <a href="https://gears.aposteriori.com.sg/index.html?worldJSON=https%3A%2F%2Fraw.githubusercontent.com%2Fvargac%2FBrno-SDB-Robotika%2Fmaster%2FgridMap.json&amp;robotJSON=https%3A%2F%2Fraw.githubusercontent.com%2Fvargac%2FBrno-SDB-Robotika%2Fmaster%2Frobot.json">prostredie</a>.</p>
+V simulátori mu odpovedá toto <a href="https://gears.aposteriori.com.sg/index.html?worldJSON=https%3A%2F%2Fraw.githubusercontent.com%2Fvargac%2FBrno-SDB-Robotika%2Fmaster%2Fassets%2FgridMap.json&amp;robotJSON=https%3A%2F%2Fraw.githubusercontent.com%2Fvargac%2FBrno-SDB-Robotika%2Fmaster%2Fassets%2Frobot_2motors.json">prostredie</a>.</p>
 <p><img alt="Robot" src="../img/robot.png" /></p>
-<pre><code class="language-py">fsfsgs
-</code></pre>
+<h2 id="program-pre-robota">Program pre robota</h2>
+<details class="example" open="open">
+<summary>Program</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span>
+<span class="normal"><a href="#__codelineno-0-25">25</a></span>
+<span class="normal"><a href="#__codelineno-0-26">26</a></span>
+<span class="normal"><a href="#__codelineno-0-27">27</a></span>
+<span class="normal"><a href="#__codelineno-0-28">28</a></span>
+<span class="normal"><a href="#__codelineno-0-29">29</a></span>
+<span class="normal"><a href="#__codelineno-0-30">30</a></span>
+<span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span>
+<span class="normal"><a href="#__codelineno-0-40">40</a></span>
+<span class="normal"><a href="#__codelineno-0-41">41</a></span>
+<span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
+<span class="normal"><a href="#__codelineno-0-44">44</a></span>
+<span class="normal"><a href="#__codelineno-0-45">45</a></span>
+<span class="normal"><a href="#__codelineno-0-46">46</a></span>
+<span class="normal"><a href="#__codelineno-0-47">47</a></span>
+<span class="normal"><a href="#__codelineno-0-48">48</a></span>
+<span class="normal"><a href="#__codelineno-0-49">49</a></span>
+<span class="normal"><a href="#__codelineno-0-50">50</a></span>
+<span class="normal"><a href="#__codelineno-0-51">51</a></span>
+<span class="normal"><a href="#__codelineno-0-52">52</a></span>
+<span class="normal"><a href="#__codelineno-0-53">53</a></span>
+<span class="normal"><a href="#__codelineno-0-54">54</a></span>
+<span class="normal"><a href="#__codelineno-0-55">55</a></span>
+<span class="normal"><a href="#__codelineno-0-56">56</a></span>
+<span class="normal"><a href="#__codelineno-0-57">57</a></span>
+<span class="normal"><a href="#__codelineno-0-58">58</a></span>
+<span class="normal"><a href="#__codelineno-0-59">59</a></span>
+<span class="normal"><a href="#__codelineno-0-60">60</a></span>
+<span class="normal"><a href="#__codelineno-0-61">61</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="ch">#!/usr/bin/env pybricks-micropython</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">from</span> <span class="nn">pybricks.ev3devices</span> <span class="kn">import</span> <span class="n">Motor</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="kn">from</span> <span class="nn">pybricks.parameters</span> <span class="kn">import</span> <span class="n">Port</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="kn">from</span> <span class="nn">pybricks.tools</span> <span class="kn">import</span> <span class="n">wait</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="n">lavy_motor</span> <span class="o">=</span> <span class="n">Motor</span><span class="p">(</span> <span class="n">Port</span><span class="o">.</span><span class="n">B</span> <span class="p">)</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">pravy_motor</span> <span class="o">=</span> <span class="n">Motor</span><span class="p">(</span> <span class="n">Port</span><span class="o">.</span><span class="n">C</span> <span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="n">lavy_motor</span><span class="o">.</span><span class="n">run</span><span class="p">(</span> <span class="mi">360</span> <span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="n">pravy_motor</span><span class="o">.</span><span class="n">run</span><span class="p">(</span> <span class="mi">360</span> <span class="p">)</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="n">wait</span><span class="p">(</span> <span class="mi">2000</span> <span class="p">)</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="n">lavy_motor</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="n">pravy_motor</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="c1"># Všechny řádky, které začínají mřížkou &#39;#&#39;, jsou tzv. &quot;komentáře&quot;.</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="c1"># To znamená, že jsou to poznámky programátora, např. aby něco nezapomněl.</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="c1"># Robot tyto řádky ignoruje, jako by tam nebyly. My toho využijeme, abychom si</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="c1"># vysvětlili novou látku.</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="c1"># </span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="c1"># Tento kód je podobný tomu z minulé hodiny. Prvních 5 řádků je magických,</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="c1"># zatím to berme tak, že je prostě třeba je napsat.</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a><span class="c1"># </span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a><span class="c1"># Následuje `left_motor = Motor( Port.B )`. Tím řekneme robotovi, že má</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="c1"># na portu &quot;B&quot; připojený motor. To je pravá strana `Motor( Port.B )`, vytvoří</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="c1"># se tak v paměti robota něco jako motor. Není to takový motor, jaký ho vidíme</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="c1"># v realitě, není to fyzický, hmotný motor. Podobně jako nám se do paměti</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="c1"># nedostane moucha, když se učíme na písemku z biologie. Máme v hlavě něco,</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="c1"># co připomíná mouchu, pamatujeme si jak vypadá, jak se chová. Stejně tak robot</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="c1"># nemá v paměti motor ale ví jak vypadá a jak ho má ovládat, i to, že je</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="c1"># připojen na portu &quot;B&quot;. Nyní ještě potřebujeme tento motor pojmenovat.</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="c1"># To se udělá tak, že na levou stranu od rovnítka &quot;=&quot; napíšeme název. Jakoby</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="c1"># si robot nalepil na motor poznámku &quot;lavy_motor&quot;. On tomu nerozumí, stejně</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="c1"># tak bychom ho mohli nazvat „vsvrbsbd“. Ale pro nás programátory je to snazší,</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a><span class="c1"># když nazýváme proměnné správně. &quot;Proměnné&quot; - to je nové slovo, myslíme jím</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="c1"># hodnotu (např. motor v paměti nebo číslo) svázanou s názvem.</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="c1"># </span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="c1"># Stejně vytvoříme &quot;pravy_motor&quot;. Ten je připojen na portu &quot;C&quot;.</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="c1"># </span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="c1"># `lavy_motor.run( 360 )` -- &quot;lavy_motor&quot; robot už má v paměti, najde si ho</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="c1"># a roztočí. Tečku &quot;.&quot; píšeme za názvem proměnné, pak následuje &quot;metoda,</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="c1"># kterou zavoláme&quot;. Co je to &quot;zavolat metodu&quot;? &quot;metoda&quot; je nějaký jiný program,</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="c1"># podprogram. Napsal ho někdo jiný, stejně jako my teď píšeme hlavní</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="c1"># program. Když se metoda &quot;zavolá&quot;, znamená to, že se tento podprogram spustí.</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="c1"># Nyní se spustí podprogram `run( 360 )` -- Motor se roztočí rychlostí 360</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="c1"># stupňů za sekundu. Víme, že kruh má 360 stupňů. Takže za jednu vteřinu</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="c1"># se kolo připojené na motor otočí o celou jednu otočku. Stejně spustíme i</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="c1"># druhý motor &quot;pravy_motor&quot;, nyní se oba točí, dokud je nevypneme.</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="c1"># </span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="c1"># `wait( 2000 )` jednoduše způsobí, že robot bude 2000ms (= 2s) čekat. Ale</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="c1"># pozor, motory jsou již spuštěny, to znamená, že se po celé tyto dvě sekundy</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="c1"># točí. &quot;wait&quot; je také podprogram. Tentokrát ale nepíšeme žádkou tečku a</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="c1"># něco před ní. &quot;lavy_motor.run&quot; byla metoda, je tam i tečka. Bez tečky</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="c1"># se to nazývá &quot;funkce&quot;. &quot;run&quot; samo o sobě neví, který motor má spustit.</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="c1"># Proto je tam i ta tečka &quot;lavy_motor.run&quot;. Ale &quot;wait&quot; je jen jedno, pro</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a><span class="c1"># jednoho robota, nedá se, aby např. jen motor čekal. Celý robot čeká.</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="c1"># </span>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a><span class="c1"># Na konci oba motory vypneme, pomocí metody &quot;stop&quot;.</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<h2 id="spustenie-programu">Spustenie programu</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">V robotovi</label><label for="__tabbed_1_2">V simulátori</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Nyní se naučíme jak program nahrát do robota. Otevřete si stránku
+<a href="https://xlcteam.github.io/RLLR/04/">https://xlcteam.github.io/RLLR/04/</a>
+a přibližně v polovině stránky najdeme
+postup na více kroků. Začneme od kroku 7: "Teraz zapneme EV3-kocku..."
+a skončíme krokem 12.</p>
+</div>
+<div class="tabbed-block">
+<p>Skopírujte <a href="#program-pre-robota">kód</a> napísaný vyššie do záložky "Python"
+v simulátori. Návod na spustenie programu
+<a href="/simulator/#spustenie-programu">tu</a>.</p>
+</div>
+</div>
+</div>
 
 
 
@@ -337,6 +580,21 @@ V simulátori mu odpovedá toto <a href="https://gears.aposteriori.com.sg/index.
           </div>
         </a>
       
+      
+        
+        <a href="../simple/" class="md-footer__link md-footer__link--next" aria-label="Next: Jednoduché úlohy" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Jednoduché úlohy
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   

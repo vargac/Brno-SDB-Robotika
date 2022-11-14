@@ -16,8 +16,6 @@ lavy_motor.stop()
 pravy_motor.stop()
 
 
-
-
 # Všechny řádky, které začínají mřížkou '#', jsou tzv. "komentáře".
 # To znamená, že jsou to poznámky programátora, např. aby něco nezapomněl.
 # Robot tyto řádky ignoruje, jako by tam nebyly. My toho využijeme, abychom si
@@ -61,37 +59,3 @@ pravy_motor.stop()
 # jednoho robota, nedá se, aby např. jen motor čekal. Celý robot čeká.
 # 
 # Na konci oba motory vypneme, pomocí metody "stop".
-# 
-# 
-# 1. Nyní se naučíme jak program nahrát do robota. Otevřete si stránku
-# https://xlcteam.github.io/RLLR/04/ a přibližně v polovině stránky najdeme
-# postup na více kroků. Začneme od kroku 7: "Teraz zapneme EV3-kocku..."
-# a skončíme krokem 12.
-# 
-# 2. Motory jsme spustili rychlostí jedna otočka za sekundu, a šli 2 sekundy.
-# Takže by se měly otočit o dvě celé otáčky. Spusťte robota a zkontrolujte,
-# zda se kolo opravdu otočilo 2 krát.
-# 
-# 3. Co kdybychom spustili motory 2krát rychleji? Nebo ještě víc? Jak
-# nejrychleji je umíte spustit?
-# 
-# 4. Nyní bychom chtěli našeho robota pustit do druhé strany, aby šel dozadu.
-# Jak byste to udělali?
-# 
-# 5. Vyzkoušejte spustit jen jeden motor, druhým se vůbec nepohne. Jaký pohyb robot
-# udělá?
-# 
-# 6. Napište program, kde se robot bude točit na místě.
-# 
-# 7. A jak byste poslali robota do kruhu? Přemýšlejte nad tím, vyzkoušejte
-# si s programem pohrát, co Vás napadne.
-# 
-# 8. Rozšiřte program dále, aby robot nejprve šel jednu sekundu dopředu, poté
-# jednu sekundu dozadu.
-# 
-# 9. Nyní chceme, aby mezitím ještě 1 vteřinu stál na místě.
-# 
-# 10. Naprogramujte robota tak, aby šel do čtverce.
-# 
-# BONUS: Vyberte si jednu písničku a zkuste vymyslet jednoduchou choreografii
-# pro vašeho robota. Znáte už všechny možné pohyby, které robot zvládne.

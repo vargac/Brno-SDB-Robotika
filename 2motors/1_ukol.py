@@ -1,0 +1,19 @@
+#!/usr/bin/env pybricks-micropython
+
+from pybricks.ev3devices import Motor
+from pybricks.parameters import Port
+from pybricks.tools import wait
+
+# 1. Co kdybychom spustili motory 2krát rychleji? Nebo ještě víc? Jak
+# nejrychleji je umíte spustit?
+
+lavy_motor = Motor( Port.B )
+pravy_motor = Motor( Port.C )
+
+lavy_motor.run( 360 )
+pravy_motor.run( 360 )
+
+wait( 2000 )
+
+lavy_motor.stop()
+pravy_motor.stop()
