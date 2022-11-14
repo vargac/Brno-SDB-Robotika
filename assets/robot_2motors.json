@@ -13,7 +13,7 @@
   "wheelToBodyOffset": 0.2,
   "bodyEdgeToWheelCenterY": 1,
   "bodyEdgeToWheelCenterZ": 2,
-  "bodyMass": 1000,
+  "bodyMass": 7000,
   "wheelMass": 200,
   "casterMass": 0,
   "caster": true,
@@ -48,7 +48,7 @@
     {
       "type": "WheelActuator",
       "position": [
-        -7,
+        -7.4,
         -1,
         5
       ],
@@ -69,7 +69,7 @@
     {
       "type": "WheelActuator",
       "position": [
-        7,
+        7.4,
         -1,
         5
       ],
