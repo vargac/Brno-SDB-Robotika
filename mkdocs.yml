@@ -1,3 +1,23 @@
 site_name: Robotika
+nav:
+  - Úvod: 'index.md'
+  - Simulátor: 'simulator.md'
+  - 'Základ - motory':
+    - Úvod: '2motors/lesson.md'
+    - Jednoduché úlohy: '2motors/simple.md'
+    - Bonus: '2motors/bonus.md'
 theme:
   name: material
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
