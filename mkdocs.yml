@@ -6,6 +6,7 @@ nav:
     - Úvod: '2motors/lesson.md'
     - Jednoduché úlohy: '2motors/simple.md'
     - Bonus: '2motors/bonus.md'
+    - Ďalšie úlohy: '2motors/more.md'
 theme:
   name: material
 
