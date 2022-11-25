@@ -339,6 +339,14 @@
 
 
 <h1 id="jednoduche-ulohy">Jednoduché úlohy</h1>
+<div class="admonition warning">
+<p class="admonition-title">Varovanie</p>
+<p>Môže nastať problém, keď simulátor nedobre napodobňuje robota v realite.
+Má veľkú zotrvačnosť a po vypnutí motorov sa robot (v simulátori) aj tak
+stále hýbe vpred, hoci reálny robot by stál na mieste. Riešením je
+prepísať všetky <code>.stop()</code> na <code>.hold()</code>. To zaručí, že sa kolesá už
+nebudú ďalej hýbať zotrvačnosťou.</p>
+</div>
 <details class="question">
 <summary>1. Úkol</summary>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>

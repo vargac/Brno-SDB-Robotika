@@ -543,6 +543,14 @@ a skončíme krokem 12.</p>
 <p>Skopírujte <a href="#program-pre-robota">kód</a> napísaný vyššie do záložky "Python"
 v simulátori. Návod na spustenie programu
 <a href="/simulator/#spustenie-programu">tu</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Varovanie</p>
+<p>Môže nastať problém, keď simulátor nedobre napodobňuje robota v realite.
+Má veľkú zotrvačnosť a po vypnutí motorov sa robot (v simulátori) aj tak
+stále hýbe vpred, hoci reálny robot by stál na mieste. Riešením je
+prepísať všetky <code>.stop()</code> na <code>.hold()</code>. To zaručí, že sa kolesá už
+nebudú ďalej hýbať zotrvačnosťou.</p>
+</div>
 </div>
 </div>
 </div>

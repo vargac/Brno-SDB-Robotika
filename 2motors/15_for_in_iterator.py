@@ -15,6 +15,6 @@ for i in range( 5 ):
     lavy_motor.run( 360 )
     pravy_motor.run( 360 )
     wait( i * 500 ) # `*` znamená násobenie
-    lavy_motor.stop()
-    pravy_motor.stop()
+    lavy_motor.hold()
+    pravy_motor.hold()
     wait( 100 )
