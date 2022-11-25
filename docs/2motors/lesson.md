@@ -27,3 +27,9 @@ V simulátori mu odpovedá toto [prostredie](https://gears.aposteriori.com.sg/in
     Skopírujte [kód](#program-pre-robota) napísaný vyššie do záložky "Python"
     v simulátori. Návod na spustenie programu
     [tu](/simulator/#spustenie-programu).
+    !!! warning "Varovanie"
+        Môže nastať problém, keď simulátor nedobre napodobňuje robota v realite.
+        Má veľkú zotrvačnosť a po vypnutí motorov sa robot (v simulátori) aj tak
+        stále hýbe vpred, hoci reálny robot by stál na mieste. Riešením je
+        prepísať všetky `.stop()` na `.hold()`. To zaručí, že sa kolesá už
+        nebudú ďalej hýbať zotrvačnosťou.
